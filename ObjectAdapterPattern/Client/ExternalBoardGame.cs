@@ -1,6 +1,6 @@
-﻿namespace DesignPatterns
+﻿namespace ObjectAdapterPattern.Client
 {
-    public class NewBoardGame
+    public class ExternalBoardGame
     {
         public int Id { get; set; }
         public string Name { get; set; }

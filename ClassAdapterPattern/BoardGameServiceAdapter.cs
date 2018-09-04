@@ -1,8 +1,10 @@
-﻿namespace DesignPatterns
+﻿using ClassAdapterPattern.Client;
+
+namespace ClassAdapterPattern
 {
-    public class BoardGameServiceAdapter : BoardGameService, INewBoardGameService
+    public class BoardGameServiceAdapter : BoardGameService, IExternalBoardGameService
     {
-        public void AddBoardGame(NewBoardGame newBoardGame)
+        public void AddBoardGame(ExternalBoardGame newBoardGame)
         {
             var boardGame = new BoardGame
             {
@@ -21,10 +23,10 @@
             return string.Empty;
         }
 
-        public NewBoardGame GetNewBoardGame(int boardGameId)
+        public ExternalBoardGame GetNewBoardGame(int boardGameId)
         {
             var boardGame = Get(boardGameId);
-            return new NewBoardGame
+            return new ExternalBoardGame
             {
                 Id = boardGame.Id,
                 Name = boardGame.Name,

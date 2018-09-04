@@ -1,4 +1,4 @@
-﻿namespace ClassAdapterPattern
+﻿namespace ObjectAdapterPattern
 {
     public class BoardGame
     {

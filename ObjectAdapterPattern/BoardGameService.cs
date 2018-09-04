@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace ClassAdapterPattern
+namespace ObjectAdapterPattern
 {
     public class BoardGameService
     {
